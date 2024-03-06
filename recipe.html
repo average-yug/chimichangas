@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    html {
+      font-family: anta;
+      text-align: center;
+      font-size: 30px;
+      text-align: center;
+    }
+    h1 {
+      text-align: center;
+      font-size: 75px;
+    }
+    .anta-regular {
+      font-family: "Anta", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    body, html {
+      height: 100%;
+      text-align: center;
+    }
+
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      position: relative;
+      opacity: 0.65;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+    .bgimg-1 {
+      background-image: url("chimi.jpg");
+      min-height: 100%;
+    }
+
+    .bgimg-2 {
+      background-image: url("changa.jpg");
+      min-height: 400px;
+    }
+
+    .bgimg-3 {
+      background-image: url("chimi.jpg");
+      min-height: 400px;
+    }
+
+    .caption {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      text-align: center;
+      color: #000;
+    }
+
+    .caption span.border {
+      background-color: #111;
+      color: #fff;
+      padding: 18px;
+      font-size: 25px;
+      letter-spacing: 10px;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1024px) {
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+      }
+
+      {
+        box-sizing: border-box;
+      }
+    /* The container */
+    .container {
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 22px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    /* Hide the browser's default checkbox */
+    .container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    /* Create a custom checkbox */
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: #eee;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .container:hover input ~ .checkmark {
+      background-color: #ccc;
+    }
+
+    /* When the checkbox is checked, add a blue background */
+    .container input:checked ~ .checkmark {
+      background-color: #2196F3;
+    }
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    /* Show the checkmark when checked */
+    .container input:checked ~ .checkmark:after {
+      display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .container .checkmark:after {
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+      
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anta&family=Nova+Square&family=Workbench&display=swap" rel="stylesheet">
+  <h2>Fácil</h2>
+  <h1 style="color:black"><strong>Chimichangas</strong></h1>
+  <h2>Receta</h2>
+
+
+  <div class="parallax"></div>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+
+
+        <br>
+        <br>
+
+        <div class="parallax"></div>
+
+        <div class="bgimg-1">
+          <div class="caption">
+         <a href="index.html"> <span class="border">HOGAR</span></a>
+          </div>
+        </div>
+  <center>
+        <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+          <h3 style="text-align:center;">Ingredientes</h3>
+          <p><label class="container">Dos tazas de pollo desmenuzado (cocido)
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          <br>
+          </label>
+          <label class="container">Una cucharada de chile en polvo
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+            <br>
+          <label class="container">Una pizca de sal
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+            <br>
+          <label class="container">Media taza de salsa
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+            <br>
+            <label class="container">Dos tazas de queso mozzarella
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <br>
+            <label class="container">Dos cucharadas de cebollas picadas
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <br>
+            <label class="container">Dos tazas de frijoles horneados
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <br>
+            <label class="container">Cuatro tortillas
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <br>
+            <label class="container">Una cucharada de aceite de oliva
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          
+           
+</p>
+  </center>
+        </div>
+        <div class="bgimg-2">
+          <div class="caption">
+          <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">TIEMPO: 30 MINUTOS</span>
+          </div>
+        </div>
+
+
+
+        <div class="parallax"></div>
+      </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+  </body>
+
+  <center>
+    
+      
+  
+    <div class="bgimg-3">
+      <div class="caption" style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+     1. Precalienta el horno a 400 grados. En un tazón, combine una taza de pollo, el chile en polvo, la sal, la salsa, el queso y las cebollas.
+      <br>
+        2. Coloque 2 cucharadas de frijoles en la tortilla cerca del borde. Agregue media taza de pollo y póngalo en el centro.  Dobla los lados de las tortillas y enrolla la parte inferior y colócalas con la costura hacia abajo en una bandeja para hornear.
+        <br>
+        3. Cepille la parte superior con aceite de oliva.  Hornea por 20 minutos.
+        <br>
+        4. ¡Hecho! Es así de fácil. ¡Disfrutar!
+      </span>
+      </div>
+    </div>
+  </center>
+
+  <div class="parallax"></div>
+
+  
+</head>
+</body>
+</html>
